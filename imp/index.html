@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Maior Menor</title>
+    <script>
+       
+            function maior() {
+                let n1 = document.getElementById("num1").value;
+                let n2 = document.getElementById("num2").value;
+
+                
+               if(n1>n2) {
+                   alert("O numero: "+n1+" é maior");               
+               }else if(n2>n1){
+                   alert("O numero: "+n2+" é maior");
+                }else{
+                    alert("Os números são iguais");
+                }
+            }
+            function menor() {
+                let n1 = document.getElementById("num1").value;
+                let n2 = document.getElementById("num2").value;
+
+                
+               if(n1<n2) {
+                   alert("O numero: "+n1+" é menor");               
+               }else if(n2<n1){
+                   alert("O numero: "+n2+" é menor");
+                }else{
+                    alert("Os números são iguais");
+                }
+            }
+        
+     
+    </script>
+
+</head>
+<body>
+    
+</body>
+
+<center><h1>Calculadora Maior / Menor</h1>
+    <input id = "num1" type="number" placeholder="Número 1" />
+    <input id = "num2" type="number" placeholder="Número 2" />
+    <br>
+    <br><button onclick="maior()">Maior</button> &nbsp
+    <button onclick="menor()">Menor</button></br></center>
+</html>
